@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="576.0" prefWidth="793.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Pane prefHeight="554.0" prefWidth="793.0">
+         <children>
+            <Label layoutX="57.0" layoutY="25.0" text="Select File" textFill="#e7e5e5">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="exit" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="749.0" layoutY="13.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#close" prefHeight="27.0" prefWidth="29.0" styleClass="exit" stylesheets="@style.css">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <ImageView fitHeight="23.0" fitWidth="158.0" layoutX="752.0" layoutY="14.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8-close-window-48.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="195.0" layoutY="106.0" text="Path:" textFill="#e7e5e5" />
+            <Button fx:id="Upload" layoutX="102.0" layoutY="101.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="60.0" styleClass="file" stylesheets="@style.css" text="Upload" textFill="WHITE" />
+            <Button fx:id="b1" layoutX="693.0" layoutY="239.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="60.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20; -fx-background-color: transparent;" stylesheets="@style.css" text="Inactive" textFill="#b7c3d7" />
+            <Label layoutX="430.0" layoutY="244.0" text=" O(E Log V)" textFill="#b7c3d7" />
+            <Label fx:id="primstime" layoutX="558.0" layoutY="245.0" textAlignment="CENTER" textFill="#b7c3d7" />
+            <Label layoutX="93.0" layoutY="245.0" text="Prims" textFill="#b7c3d7" />
+            <Label layoutX="230.0" layoutY="245.0" text="Adjacency List and Min Heap" textFill="#b7c3d7" />
+            <ImageView fitHeight="31.0" fitWidth="25.0" layoutX="36.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8_GPS_Antenna_64px_1.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="b2" layoutX="693.0" layoutY="289.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="60.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20; -fx-background-color: transparent;" stylesheets="@style.css" text="Inactive" textFill="#b7c3d7" />
+            <Label layoutX="430.0" layoutY="294.0" text=" O(E Log V)" textFill="#b7c3d7" />
+            <Label fx:id="kruskaltime" layoutX="558.0" layoutY="295.0" textAlignment="CENTER" textFill="#b7c3d7" />
+            <Label layoutX="93.0" layoutY="295.0" text="Kruskal" textFill="#b7c3d7" />
+            <Label layoutX="230.0" layoutY="295.0" text="Adjacency List and Priority Queue" textFill="#b7c3d7" />
+            <ImageView fitHeight="31.0" fitWidth="25.0" layoutX="36.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8_GPS_Antenna_64px_1.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="b3" layoutX="693.0" layoutY="339.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="60.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20; -fx-background-color: transparent;" stylesheets="@style.css" text="Inactive" textFill="#b7c3d7" />
+            <Label layoutX="430.0" layoutY="344.0" text=" O(E Log V)" textFill="#b7c3d7" />
+            <Label fx:id="dijkstratime" layoutX="558.0" layoutY="345.0" textAlignment="CENTER" textFill="#b7c3d7" />
+            <Label layoutX="93.0" layoutY="345.0" text="Dijkstra" textFill="#b7c3d7" />
+            <Label layoutX="230.0" layoutY="345.0" text="Adjacency List and Min Heap" textFill="#b7c3d7" />
+            <ImageView fitHeight="31.0" fitWidth="25.0" layoutX="36.0" layoutY="341.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8_GPS_Antenna_64px_1.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="b4" layoutX="693.0" layoutY="389.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="60.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20; -fx-background-color: transparent;" stylesheets="@style.css" text="Inactive" textFill="#b7c3d7" />
+            <Label layoutX="440.0" layoutY="394.0" text="O(VE)" textFill="#b7c3d7" />
+            <Label fx:id="bellmantime" layoutX="558.0" layoutY="395.0" textAlignment="CENTER" textFill="#b7c3d7" />
+            <Label layoutX="93.0" layoutY="395.0" text="Bellman Ford" textFill="#b7c3d7" />
+            <Label layoutX="230.0" layoutY="395.0" text="Adjacency List" textFill="#b7c3d7" />
+            <ImageView fitHeight="31.0" fitWidth="25.0" layoutX="36.0" layoutY="391.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8_GPS_Antenna_64px_1.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="b5" layoutX="693.0" layoutY="439.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="60.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20; -fx-background-color: transparent;" stylesheets="@style.css" text="Inactive" textFill="#b7c3d7" />
+            <Label layoutX="436.0" layoutY="444.0" text="O(n^3)" textFill="#b7c3d7" />
+            <Label fx:id="floydtime" layoutX="558.0" layoutY="445.0" textAlignment="CENTER" textFill="#b7c3d7" />
+            <Label layoutX="93.0" layoutY="445.0" text="Floyd Warshall " textFill="#b7c3d7" />
+            <Label layoutX="230.0" layoutY="445.0" text="Adjacency Matrix" textFill="#b7c3d7" />
+            <ImageView fitHeight="31.0" fitWidth="25.0" layoutX="36.0" layoutY="441.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8_GPS_Antenna_64px_1.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="b6" layoutX="693.0" layoutY="489.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="60.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20; -fx-background-color: transparent;" stylesheets="@style.css" text="Inactive" textFill="#b7c3d7" />
+            <Label layoutX="436.0" layoutY="494.0" text="O(n^3)" textFill="#b7c3d7" />
+            <Label fx:id="clusteringtime" layoutX="558.0" layoutY="495.0" textAlignment="CENTER" textFill="#b7c3d7" />
+            <Label layoutX="93.0" layoutY="495.0" text="Clustering Coefficient" textFill="#b7c3d7" />
+            <Label layoutX="230.0" layoutY="495.0" text="Adjacency List" textFill="#b7c3d7" />
+            <ImageView fitHeight="31.0" fitWidth="25.0" layoutX="36.0" layoutY="491.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8_GPS_Antenna_64px_1.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="run" layoutX="646.0" layoutY="101.0" mnemonicParsing="false" onAction="#runbtn" prefHeight="10.0" prefWidth="60.0" styleClass="run" stylesheets="@style.css" text="Run" textFill="WHITE" />
+            <Label layoutX="419.0" layoutY="194.0" text="Time Complexity" textFill="#e7e5e5" />
+            <Label layoutX="706.0" layoutY="185.0" text="Status" textFill="#e7e5e5" />
+            <Label layoutX="558.0" layoutY="194.0" text="Time (μs)" textFill="#e7e5e5" />
+            <Label layoutX="230.0" layoutY="195.0" text="Approach" textFill="#e7e5e5" />
+            <Label layoutX="93.0" layoutY="195.0" text="Algorithm" textFill="#e7e5e5" />
+            <Label fx:id="path" layoutX="227.0" layoutY="106.0" text="input100.txt" textFill="#b7c3d7" />
+            <Button fx:id="og" layoutX="27.0" layoutY="101.0" mnemonicParsing="false" onAction="#ogbtn" prefHeight="25.0" prefWidth="60.0" styleClass="file" stylesheets="@style.css" text="Graph" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</StackPane>
